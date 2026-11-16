@@ -62,6 +62,7 @@ Dự án này sẽ không thể hoàn thiện nếu thiếu đi những đóng g
 ## 🔐 Giấy phép (License)
 
 Dự án được phân phối dưới giấy phép MIT License. Xem chi tiết tại file [`LICENSE`](https://github.com/mcsstudio/sekai-stickers/blob/main/LICENSE).
+Dự án này chưa được build, vui lòng build thủ công.
 
 [contributors-shield]: https://img.shields.io/github/contributors/mcsstudio/sekai-stickers.svg?style=for-the-badge
 [contributors-url]: https://github.com/mcsstudio/sekai-stickers/graphs/contributors
