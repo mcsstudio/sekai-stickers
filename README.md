@@ -21,16 +21,14 @@
 
 Đây là phiên bản được phát triển dựa trên mã nguồn mở của ứng dụng Project Sekai Stickers gốc. Dự án đã được tối ưu hóa lại giao diện (UI/UX), nâng cao hiệu suất tải trang và bổ sung thêm nhiều tính năng tiện ích cho người dùng.
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=mcsstudio&repo=sekai-stickers&theme=tokyonight&show_owner=true&hide_border=true)](https://github.com/mcsstudio/sekai-stickers)
-
 ## <img src="https://cdn.discordapp.com/emojis/859424401186095114.png" width="20px" height="20px"> Tính năng nổi bật
 
 - [x] Wonderhoy!
-- [x] Tải xuống và sao chép sticker dễ dàng
-- [x] Bộ đếm tổng số sticker toàn cầu
-- [x] Giao diện chuẩn responsive (tương thích hoàn toàn với điện thoại và máy tính)
+- [x] Miku dayo!
+- [x] Tải xuống và sao chép sticker
+- [x] Giao diện chuẩn responsive (tương thích với điện thoại và máy tính)
 - [x] Tối ưu hóa hiệu suất và khả năng truy cập (accessibility)
-- [ ] Nút chia sẻ lên mạng xã hội (Đang phát triển)
+- [ ] Chia sẻ lên mạng xã hội
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px"> Hình ảnh minh họa
 
