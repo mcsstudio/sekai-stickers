@@ -36,6 +36,20 @@
   <img src="public/screenshot.png" alt="Ảnh chụp màn hình ứng dụng" width="100%">
 </p>
 
+## 🧪 Kiểm thử tự động (Automated Testing)
+
+Dự án đi kèm với một script sử dụng **Playwright** để tự động kiểm tra khả năng hiển thị (responsiveness) của giao diện trên nhiều kích thước màn hình khác nhau (từ Desktop 1920px đến Mobile 320px).
+
+Để chạy bài test, bạn cần cài đặt Playwright và chạy lệnh sau:
+
+```bash
+npm install -D playwright
+npx playwright install chromium
+node test-responsive.mjs
+```
+
+Script sẽ tự động chụp ảnh màn hình ở các chế độ khác nhau và quét các lỗi về giao diện (nút quá nhỏ, tràn màn hình, đè chữ, v.v.) và lưu vào thư mục `screenshots/`.
+
 ## ✨ Ghi nhận đóng góp (Credits)
 
 Dự án này sẽ không thể hoàn thiện nếu thiếu đi những đóng góp từ cộng đồng:
@@ -47,7 +61,7 @@ Dự án này sẽ không thể hoàn thiện nếu thiếu đi những đóng g
 
 ## 🔐 Giấy phép (License)
 
-Dự án được phân phối dưới giấy phép MIT License. Xem chi tiết tại file [`LICENSE`](https://github.com/mcsstudio/sekai-stickers/blob/main/LICENCE).
+Dự án được phân phối dưới giấy phép MIT License. Xem chi tiết tại file [`LICENSE`](https://github.com/mcsstudio/sekai-stickers/blob/main/LICENSE).
 
 [contributors-shield]: https://img.shields.io/github/contributors/mcsstudio/sekai-stickers.svg?style=for-the-badge
 [contributors-url]: https://github.com/mcsstudio/sekai-stickers/graphs/contributors
