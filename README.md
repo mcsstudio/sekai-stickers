@@ -28,6 +28,7 @@
 - [x] Tải xuống và sao chép sticker
 - [x] Giao diện chuẩn responsive (tương thích với điện thoại và máy tính)
 - [x] Tối ưu hóa hiệu suất và khả năng truy cập (accessibility)
+- [ ] Sử dụng tiếng Việt có dấu (đang phát triển)
 - [ ] Chia sẻ lên mạng xã hội
 
 ## <img src="https://cdn.discordapp.com/emojis/1028680849195020308.png" width="25px" height="25px"> Hình ảnh minh họa
