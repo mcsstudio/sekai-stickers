@@ -77,7 +77,8 @@ export default function Picker({ setCharacter, color }) {
 
   return (
     <div>
-      <Tooltip title="Pick character">
+      {/* Đã dịch Tooltip */}
+      <Tooltip title="Chọn nhân vật">
         <IconButton
           aria-describedby={id}
           color="secondary"
@@ -102,10 +103,11 @@ export default function Picker({ setCharacter, color }) {
         className="modal"
       >
         <div className="picker-search">
+          {/* Đã dịch Label của ô tìm kiếm */}
           <TextField
             id="picker-search-input"
             name="search"
-            label="Search character"
+            label="Tìm kiếm nhân vật"
             size="small"
             color="secondary"
             value={search}
