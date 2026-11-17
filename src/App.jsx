@@ -32,7 +32,9 @@ const Info = lazy(() => import("./components/Info"));
 
 const fac = new FastAverageColor();
 
+// Hàm này giữ nguyên, không cần dịch
 function desaturateColor(hex) {
+  // ... (giữ nguyên toàn bộ logic bên trong hàm này)
   const r = parseInt(hex.slice(1, 3), 16);
   const g = parseInt(hex.slice(3, 5), 16);
   const b = parseInt(hex.slice(5, 7), 16);
@@ -185,8 +187,9 @@ function App() {
       ctx.font = "20px sans-serif";
       ctx.fillStyle = "white";
       ctx.textAlign = "center";
+      // Đã dịch dòng chữ hướng dẫn trên Canvas
       ctx.fillText(
-        "Pick a character to start ↘️",
+        "Chọn một nhân vật để bắt đầu ↘️",
         w / 2,
         h - 10
       );
@@ -259,18 +262,20 @@ function App() {
               fontSize: { xs: "1.75rem", sm: "2.5rem", md: "3rem" },
             }}
           >
-            Project Sekai Stickers Maker
+            {/* Dịch tiêu đề chính */}
+            Công cụ tạo Sticker Project Sekai
           </Typography>
           <Typography variant="subtitle1" align="center">
-            Created by{" "}
+            {/* Dịch phần Credits */}
+            Được tạo bởi{" "}
             <Link
               sx={{ color: dominantColor }}
               onClick={handleInfoOpen}
               href="#"
             >
-              Ayaka and others
+              Ayaka và cộng sự
             </Link>
-            , tweaked by{" "}
+            , tinh chỉnh bởi{" "}
             <Link
               sx={{ color: dominantColor }}
               href="https://erica.moe/@er1kaceae"
@@ -284,7 +289,8 @@ function App() {
             <Button
               variant="outlined"
               startIcon={<GitHub />}
-              href="https://github.com/BedrockDigger/sekai-stickers"
+              // Link này bạn nên đổi thành repo của bạn
+              href="https://github.com/mcsstudio/sekai-stickers"
               target="_blank"
               sx={{
                 color: dominantColor,
@@ -293,7 +299,8 @@ function App() {
               }}
               size="small"
             >
-              Star on GitHub
+              {/* Dịch nút Github */}
+              Đánh dấu sao trên GitHub
             </Button>
           </Typography>
         </Grid>
@@ -335,7 +342,8 @@ function App() {
                   }}
                 >
                   <KeyboardArrowUp />
-                  <Tooltip title="move text vertically" placement="right">
+                  {/* Dịch Tooltip */}
+                  <Tooltip title="Di chuyển văn bản theo chiều dọc" placement="right">
                     <Slider
                       value={
                         curve
@@ -366,7 +374,8 @@ function App() {
                 }}
               >
                 <KeyboardArrowLeft />
-                <Tooltip title="move text horizontally" sx={{ flexGrow: 1, mx: 1 }}>
+                {/* Dịch Tooltip */}
+                <Tooltip title="Di chuyển văn bản theo chiều ngang" sx={{ flexGrow: 1, mx: 1 }}>
                   <Slider
                     value={position.x}
                     onChange={handleHorizontalPositionChange}
@@ -386,7 +395,6 @@ function App() {
             </Box>
           </Grid>
           <Grid
-
             sx={{
               display: { xs: "none", md: "flex" },
               justifyContent: "center",
@@ -417,7 +425,8 @@ function App() {
                 fontFamily="YurukaStd"
                 sx={{ flexShrink: 0, mr: 2, whiteSpace: "nowrap" }}
               >
-                Rotation
+                {/* Dịch nhãn thanh trượt Xoay */}
+                Độ xoay
               </Typography>
               <Slider
                 value={rotate}
@@ -443,7 +452,8 @@ function App() {
                 fontFamily="YurukaStd"
                 sx={{ flexShrink: 0, mr: 2, whiteSpace: "nowrap" }}
               >
-                Font size
+                {/* Dịch nhãn thanh trượt Cỡ chữ */}
+                Cỡ chữ
               </Typography>
               <Slider
                 value={fontSize}
@@ -469,7 +479,8 @@ function App() {
                 fontFamily="YurukaStd"
                 sx={{ flexShrink: 0, mr: 2, whiteSpace: "nowrap" }}
               >
-                Spacing
+                {/* Dịch nhãn thanh trượt Khoảng cách dòng */}
+                Khoảng cách
               </Typography>
               <Slider
                 value={spaceSize}
@@ -495,7 +506,8 @@ function App() {
                 fontFamily="YurukaStd"
                 sx={{ flexShrink: 0, mr: 2, whiteSpace: "nowrap" }}
               >
-                Curved text?
+                {/* Dịch nhãn Công tắc cong chữ */}
+                Uốn cong chữ?
               </Typography>
               <Switch
                 checked={curve}
@@ -507,7 +519,8 @@ function App() {
               <TextField
                 id="main-text-input"
                 name="text"
-                label="(multiline) text"
+                // Dịch label ô nhập văn bản
+                label="Văn bản (nhiều dòng)"
                 size="small"
                 sx={{ color: dominantColor }}
                 value={text}
@@ -536,7 +549,8 @@ function App() {
               style={{ fontFamily: "YurukaStd" }}
               sx={{ color: dominantColor }}
             >
-              copy
+              {/* Dịch nút Copy */}
+              Sao chép
             </Button>
             <Button
               variant="outlined"
@@ -545,7 +559,8 @@ function App() {
               style={{ fontFamily: "YurukaStd" }}
               sx={{ color: dominantColor }}
             >
-              download
+              {/* Dịch nút Download */}
+              Tải xuống
             </Button>
           </ButtonGroup>
         </Grid>
@@ -553,13 +568,15 @@ function App() {
           open={copyPopupOpen}
           autoHideDuration={2000}
           onClose={handleCopyPopupClose}
-          message="Copied image to clipboard"
+          // Dịch thông báo Copy
+          message="Đã sao chép ảnh vào clipboard"
         />
         <Snackbar
           open={downloadPopupOpen}
           autoHideDuration={2000}
           onClose={handleDownloadPopupClose}
-          message="Downloading image..."
+          // Dịch thông báo Download
+          message="Đang tải ảnh xuống..."
         />
       </Grid>
       <Suspense fallback={null}>
