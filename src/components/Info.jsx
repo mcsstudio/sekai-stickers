@@ -20,11 +20,11 @@ export default function Info({ open, handleClose }) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">Info</DialogTitle>
+        <DialogTitle id="alert-dialog-title">Thông tin dự án</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             <Typography variant="h6" component="h3">
-              This tool made possible by:
+              Công cụ này được hoàn thiện nhờ:
             </Typography>
             <List>
               <ListItem
@@ -41,7 +41,7 @@ export default function Info({ open, handleClose }) {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Ayaka"
-                  secondary="for the original idea"
+                  secondary="Ý tưởng gốc"
                 />
               </ListItem>
               <ListItem
@@ -58,7 +58,7 @@ export default function Info({ open, handleClose }) {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Modder4869"
-                  secondary="for the help with the code"
+                  secondary="Hỗ trợ viết code"
                 />
               </ListItem>
               <ListItem
@@ -76,7 +76,7 @@ export default function Info({ open, handleClose }) {
                 </ListItemAvatar>
                 <ListItemText
                   primary="u/SherenPlaysGames"
-                  secondary="for the original stamps"
+                  secondary="Bộ sticker gốc"
                 />
               </ListItem>
               <ListItem
@@ -93,20 +93,20 @@ export default function Info({ open, handleClose }) {
                   />
                 </ListItemAvatar>
                 <ListItemText
-                  primary="Contributors"
-                  secondary="for the help with the code"
+                  primary="Những người đóng góp"
+                  secondary="Hỗ trợ phát triển dự án"
                 />
               </ListItem>
             </List>
             <Typography variant="h6" component="h3">
-              You can find the source code or contribute here:
+              Bạn có thể tìm thấy mã nguồn hoặc đóng góp tại đây:
             </Typography>
             <List>
               <ListItem
                 button
                 onClick={() =>
                   (window.location.href =
-                    "https://github.com/TheOriginalAyaka/sekai-stickers")
+                    "https://github.com/mcsstudio/sekai-stickers")
                 }
               >
                 <ListItemAvatar>
@@ -115,11 +115,12 @@ export default function Info({ open, handleClose }) {
                     src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   />
                 </ListItemAvatar>
-                <ListItemText primary="GitHub" secondary="Source Code" />
+                <ListItemText primary="GitHub" secondary="Mã nguồn (Bản Việt hóa)" />
               </ListItem>
             </List>
+            {/* Bạn có thể giữ hoặc bỏ phần Discord bot nếu muốn */}
             <Typography variant="h6" component="h3">
-              The discord bot:
+              Discord bot:
             </Typography>
             <List>
               <ListItem
@@ -136,7 +137,7 @@ export default function Info({ open, handleClose }) {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Sekai Stickers"
-                  secondary="Add more fun to your server."
+                  secondary="Thêm niềm vui cho server của bạn."
                 />
               </ListItem>
             </List>
@@ -144,7 +145,7 @@ export default function Info({ open, handleClose }) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary" autoFocus>
-            Close
+            Đóng
           </Button>
         </DialogActions>
       </Dialog>
